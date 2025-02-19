@@ -39,9 +39,9 @@ def draw_figure(energ_dict,elect_dict):
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12))
 
     # Plot energy data on the first subplot
-    ax1.plot(energ_dict.keys(), energ_dict.values(), marker='o', color='g', label='Electricity Import/Export (MW)')
+    ax1.plot(energ_dict.keys(), energ_dict.values(), marker='o', color='g', label='Electricity Import/Export (GW)')
     ax1.set_xlabel('Time')
-    ax1.set_ylabel('Electricity Import/Export (MW)')
+    ax1.set_ylabel('Electricity Import/Export (GW)')
     ax1.set_title('Electricity Import/Export Over Time')
     ax1.grid(True)
     ax1.legend()
